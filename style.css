@@ -1,0 +1,243 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    background-color: #797667;
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 40px;
+    margin-bottom: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #151008;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  #contact a {
+    margin-right: 20px;
+    color: #FFBBBB;
+    text-decoration: none;
+  }
+
+  /* Hero section styling */
+#hero {
+  padding: 40px;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 120px;  /* Shrinking the image */
+  height: 120px; /* Maintain aspect ratio */
+  border-radius: 50%;  /* Circular image */
+  margin-right: 20px;  /* Spacing between the image and text */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #151008;
+  margin: 0;
+}
+
+  /* Basic layout styling */
+#projects {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin-bottom: 40px;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #151008;
+  margin-bottom: 20px;
+}
+
+/* Style for project card */
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.project-card h3 {
+  font-size: 1.8em;
+  color: #151008;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #2980b9;
+}
+
+/* Project Showcase - Grid layout for images */
+.project-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));  /* 3-4 columns based on screen size */
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+}
+
+.project-image:hover {
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+  transition: transform 0.3s ease;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 1.5em;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+
+  .project-card h3 {
+    font-size: 1.3em;
+  }
+}
+/* About Section Styling */
+#about {
+  padding: 40px 20px;
+  background-color: #ffffff;  /* Soft white background for a clean look */
+  color: #151008;  /* Dark text color */
+  text-align: center;  /* Center-align the text */
+  border-top: 4px solid #ffbbbb;  /* An accent line on top */
+  margin-top: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Add subtle shadow for depth */
+}
+
+/* Content Container */
+.about-content {
+  max-width: 900px; /* Limit the width of content */
+  margin: 0 auto;  /* Center content */
+  padding: 20px;
+}
+
+/* Styling for Heading */
+#about h2 {
+  font-size: 2.5em;
+  color: #151008;  /* color for the heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for Paragraphs */
+#about p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555;  /* Soft dark gray for the paragraph text */
+  margin-bottom: 15px;
+}
+
+/* Emphasizing the Bold Text */
+#about p strong {
+  font-size: 1.3em;
+  color: #151008;  /* Make the "Tech Moms 2.0" part stand out with the same blue color */
+  font-weight: bold;
+}
+
+/* Add some spacing around the About section for better visibility */
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 15px;
+  }
+
+  #about h2 {
+    font-size: 2em;
+  }
+
+  #about p {
+    font-size: 1.1em;
+  }
+}
+
